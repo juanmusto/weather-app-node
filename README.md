@@ -2,7 +2,7 @@
 
 Run ```npm install```
 
-###Example
+### Example
 
 ```
 node app.js -c "Buenos aires"
