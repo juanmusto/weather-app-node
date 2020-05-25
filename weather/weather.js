@@ -1,0 +1,12 @@
+const axios = require('axios');
+
+const getWeather = async (lat, lon) => {
+
+    const responseApi = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=32f843d833c38373032f825c4a92418a&units=metric`);
+
+    return responseApi.data.main.temp
+}
+
+module.exports = {
+    getWeather
+}
